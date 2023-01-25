@@ -15,3 +15,5 @@ whatIsMyTypeOf(33);
 whatIsMyTypeOf('fuckRussia');
 whatIsMyTypeOf({});
 whatIsMyTypeOf(window);
+
+
