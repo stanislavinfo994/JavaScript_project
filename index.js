@@ -1,3 +1,4 @@
+/*
 console.log();
 const show = (value, type)=>console.log(`typeof (${value}) is ${type}`);
 
@@ -16,4 +17,12 @@ whatIsMyTypeOf('fuckRussia');
 whatIsMyTypeOf({});
 whatIsMyTypeOf(window);
 
+*/
+
+//
+// const name = prompt('What is your name?', );
+// alert(`Hello ${name}! How are you?`);
+// const currentAge = prompt('Який зараз рік?', '2023');
+// const age = prompt ('Скільки вам років?');
+// alert( ${name}'Ваш рік народження?'${current-age});
 
