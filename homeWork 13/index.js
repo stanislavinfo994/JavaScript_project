@@ -6,3 +6,4 @@ function checkProtocol() {
     window.location.href = 'https://' + link;
     }
 }
+
