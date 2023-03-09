@@ -17,4 +17,3 @@ const myArray = [1, 2, [1.1, 1.2, 1.3], 3];
 const myList = generateList(myArray);
 document.body.appendChild(myList);
 
-
