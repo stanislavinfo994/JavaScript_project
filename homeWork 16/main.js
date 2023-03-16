@@ -22,17 +22,14 @@ function showImage(index) {
         nextButton.style.display = 'block';
     }
 }
-
 prevButton.addEventListener('click', () => {
     if (currentImageIndex > 0) {
         showImage(currentImageIndex - 1);
     }
 });
-
 nextButton.addEventListener('click', () => {
     if (currentImageIndex < images.length - 1) {
         showImage(currentImageIndex + 1);
     }
 });
-
 showImage(currentImageIndex);
