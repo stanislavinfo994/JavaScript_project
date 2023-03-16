@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.body{
+    width: 940px;
+    display: flex;
+    margin: auto;
+
+}
+.slider {
+    position: relative;
+}
+
+.slider img {
+    display: none;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: auto;
+}
+
+.slider img:first-child {
+    display: block;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider button.prev {
+    left: 10px;
+}
+
+.slider button.next {
+    right: 10px;
+}
