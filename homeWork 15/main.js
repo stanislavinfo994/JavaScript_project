@@ -7,13 +7,15 @@ function Tasks(_formInput, _todosWrapper) {
         this.input.value = '';
         document.querySelectorAll('.js--delete').forEach(item => {
             item.addEventListener('click', this.delete);
+            console.log();
+        })
+        document.querySelectorAll('.js--done').forEach(item => {
+            item.addEventListener('click', this.done);
+            console.log();
         })
     }
-    document.querySelectorAll('.todo-item__description').forEach(item => {
-        item.addEventListener('click', this.done);
-    })
     this.done = function (event) {
-        event.target.closest('.js--todo-item').remove();
+        event.target.closest('.js--todo-item').classList.add('todo-item--checked');
     }
     this.delete = function (event) {
         event.target.closest('.js--todo-item').remove();
@@ -22,7 +24,7 @@ function Tasks(_formInput, _todosWrapper) {
         return `
             <div class="todo-item js--todo-item">
                     <div class="todo-item__description">${description}</div>
-                    <button class="todo-item__complete todo-item--checked">Done</button>
+                    <button class="todo-item__complete js--done">Done</button>
                     <button class="todo-item__delete js--delete">Отметить</button>
             </div>
             

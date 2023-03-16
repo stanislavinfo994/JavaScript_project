@@ -54,9 +54,11 @@ h1, h2 {
     margin-bottom: 10px;
 }
 .todo-item--checked {
-    text-decoration: line-through;
     background-color: grey;
     opacity: 0.5;
+}
+.todo-item.todo-item--checked .todo-item__description{
+    text-decoration: line-through;
 }
 .todo-item__description {
     flex-grow: 1;
