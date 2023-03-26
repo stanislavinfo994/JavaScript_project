@@ -1,31 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script>
-        // document.cookie = 'user=Привет мир; max-age=60';
-        // document.cookie = 'user=Привет мир;';
-        // console.log(document.cookie);
-        function test() {
-            const test = {
-                'value': '1',
-                age: 30
-            }
-            localStorage.setItem('newValue', JSON.stringify(test));
-        }
-        function send() {
-            const data = localStorage.getItem('newValue');
-            console.log(typeof data, data);
-            console.log(typeof JSON.parse(data), JSON.parse(data).age);
-        }
-    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homeTask - 17</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-<button onclick="test()">test</button>
-<button onclick="send()">send</button>
+    <div>
+        <table class="table table-bordered">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Age</th>
+                <th>Action</th>
+            </thead>
+            <tbody class="js--content"></tbody>
+        </table>
+        <div class="card p-4">
+            <button class="js--add btn btn-add btn-primary">Add user</button>
+        </div>
+        <form class="js--form card card--user p-4">
+            <input type="hidden" name="id">
+            <input class="form-control mb-1" type="text" name="name" placeholder="Name" required>
+            <input class="form-control mb-1" type="text" name="phone" placeholder="Phone" required>
+            <input class="form-control mb-3" type="number" name="age" placeholder="Age" min="18" required>
+            <button class="btn btn-primary mb-2 w-100" type="submit">OK</button>
+        </form>
+        <code class="card p-4">
+            <pre class="js--user user-info">
+                { asd: 'asd' }
+            </pre>
+        </code>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
