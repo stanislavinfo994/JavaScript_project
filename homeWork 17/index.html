@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // document.cookie = 'user=Привет мир; max-age=60';
+        // document.cookie = 'user=Привет мир;';
+        // console.log(document.cookie);
+        function test() {
+            const test = {
+                'value': '1',
+                age: 30
+            }
+            localStorage.setItem('newValue', JSON.stringify(test));
+        }
+        function send() {
+            const data = localStorage.getItem('newValue');
+            console.log(typeof data, data);
+            console.log(typeof JSON.parse(data), JSON.parse(data).age);
+        }
+    </script>
+</head>
+<body>
+<button onclick="test()">test</button>
+<button onclick="send()">send</button>
+</body>
+</html>
