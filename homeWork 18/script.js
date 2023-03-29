@@ -12,27 +12,22 @@ function openModal(imageIndex) {
     modalContent.innerHTML = `<img src="${galleryItems[imageIndex].querySelector('img').src}" alt="img">`;
     modal.style.display = 'block';
 }
-
 function closeModal() {
     modal.style.display = 'none';
 }
-
 function showPrevImage() {
     currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
     openModal(currentImageIndex);
 }
-
 function showNextImage() {
     currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
     openModal(currentImageIndex);
 }
-
 galleryItems.forEach((item, index) => {
     item.addEventListener('click', () => {
         openModal(index);
     });
 });
-
 modalPrevBtn.addEventListener('click', showPrevImage);
 modalNextBtn.addEventListener('click', showNextImage);
 modalCloseBtn.addEventListener('click', closeModal);
