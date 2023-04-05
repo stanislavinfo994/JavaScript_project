@@ -1,0 +1,15 @@
+input:invalid {
+    border-color: red;
+}
+
+input:invalid:focus {
+    outline: none;
+}
+
+input:invalid::placeholder {
+    color: red;
+}
+
+input:invalid + .error-message {
+    display: block;
+}
