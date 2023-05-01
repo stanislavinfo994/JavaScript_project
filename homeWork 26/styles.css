@@ -1,0 +1,70 @@
+form {
+    font-family: Arial, sans-serif;
+}
+
+form label {
+    font-family: Arial, sans-serif;
+}
+
+form input {
+    font-family: Arial, sans-serif;
+}
+
+form button {
+    font-family: Arial, sans-serif;
+}
+form label {
+    float: right;
+    /* display: flex; */
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form label div:nth-child(5) input {
+    margin-left: 10px;
+}
+form {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form div:nth-child(1) input{
+    width: 100%;
+}
+form div:nth-child(2) input{
+    width: 100%;
+}
+form div:nth-child(3) input{
+    width: 100%;
+}
+form div:nth-child(4) input{
+    width: 100%;
+}
+
+form button {
+    display: flex;
+    margin: auto;
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #006080;
+}
