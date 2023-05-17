@@ -5,7 +5,7 @@
     font-size: 55px;
  }
 body {
-    max-width: 500px;
+    max-width: 940px;
     margin: auto;
     display: flex;
     align-content: center;
@@ -33,7 +33,14 @@ button {
     display: table;
 }
 
+.vote-count {
+    display: none;
+}
 
+.vote-count.show {
+    display: inline;
+    font-size: 20px;
+}
 
 #smileyContainer > div:hover:nth-child(1) {
     background-color: yellow;
