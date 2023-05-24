@@ -1,0 +1,80 @@
+#root > div > div > div:nth-child(2) {
+    display: inline-flex;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 55px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#root > div > div > div:nth-child(4) > div > div{
+    cursor: pointer;
+    font-size: 55px;
+    margin: auto;
+    display: table;
+}
+
+#root {
+    max-width: 940px;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+button {
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.vote-count {
+    display: none;
+}
+#root > div > div > div:nth-child(2) > div:nth-child(1) > span {
+    display: inline;
+    font-size: 20px;
+}
+#root > div > div > div:nth-child(2) > div:nth-child(2) > span {
+    display: inline;
+    font-size: 20px;
+}
+#root > div > div > div:nth-child(2) > div:nth-child(3) > span {
+    display: inline;
+    font-size: 20px;
+}
+#root > div > div > div:nth-child(2) > div:nth-child(4) > span {
+    display: inline;
+    font-size: 20px;
+}
+#root > div > div > div:nth-child(2) > div:nth-child(5) > span {
+    display: inline;
+    font-size: 20px;
+}
+
+#root > div > div > div:nth-child(2) > div:hover:nth-child(1) {
+    background-color: yellow;
+}
+#root > div > div > div:nth-child(2) > div:hover:nth-child(2) {
+    background-color: yellow;
+}
+#root > div > div > div:nth-child(2) > div:hover:nth-child(3) {
+    background-color: yellow;
+}
+#root > div > div > div:nth-child(2) > div:hover:nth-child(4) {
+    background-color: yellow;
+}
+#root > div > div > div:nth-child(2) > div:hover:nth-child(4) {
+    background-color: yellow;
+}
+
