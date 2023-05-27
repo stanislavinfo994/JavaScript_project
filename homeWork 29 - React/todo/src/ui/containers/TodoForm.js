@@ -13,7 +13,7 @@ class TodoForm extends React.Component {
                 onSubmit={handleAdd}
             >
                 <Input />
-                <Button text="Отправить" />
+                <Button text="Додати" />
             </form>
         );
     }
