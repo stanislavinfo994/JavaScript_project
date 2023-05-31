@@ -1,0 +1,62 @@
+.todo-item {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-item--checked {
+    text-decoration: line-through;
+}
+
+.todo-item__description {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.todo-item__delete {
+    background: #0be69d;
+    border: none;
+    cursor: pointer;
+    width: 95px;
+    padding: 10px;
+}
+
+.todo-item__edit {
+    background: #3366cc;
+    border: none;
+    cursor: pointer;
+    width: 95px;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.todo-item__edit-save {
+    background: #0be69d;
+    border: none;
+    cursor: pointer;
+    width: 95px;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.todo-item__edit-cancel {
+    background: #ff3333;
+    border: none;
+    cursor: pointer;
+    width: 95px;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+}
+#root input[type=text] {
+    min-height: 25px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid;
+}
