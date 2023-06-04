@@ -11,16 +11,14 @@
 </head>
 <body>
 
-
 <label for="password-input">Пароль:</label>
 <input id="password-input" type="password">
-<div class="error-message">
-
-</div>
-
-
-
+<div class="error-message uppercase-error" style="display: none;">Пароль повинен містити хоча б одну велику літеру</div>
+<div class="error-message number-error" style="display: none;">Пароль повинен містити хоча б одну цифру</div>
+<div class="error-message punctuation-error" style="display: none;">Пароль повинен містити хоча б один знак пунктуації</div>
+<div class="error-message length-error" style="display: none;">Пароль повинен містити не менше 8 символів</div>
 
 <script src="script.js"></script>
+
 </body>
 </html>

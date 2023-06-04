@@ -3,24 +3,50 @@ const uppercaseRegex = /[A-Z]/;
 const numberRegex = /[0-9]/;
 const punctuationRegex = /[!"#$%&'()*+,-./:;<=>?@[\\\]^_`{|}~]/;
 const minLength = 8;
-const errorMessage = document.querySelector('.error-message');
+const uppercaseError = document.querySelector('.uppercase-error');
+const numberError = document.querySelector('.number-error');
+const punctuationError = document.querySelector('.punctuation-error');
+const lengthError = document.querySelector('.length-error');
 
 function validatePassword() {
     const passwordValue = passwordInput.value;
 
-    if (!passwordValue.match(uppercaseRegex)) {
-        passwordInput.setCustomValidity('Одна велика буква');
-    } else if (!passwordValue.match(numberRegex)) {
-        passwordInput.setCustomValidity('Одна цифра');
-    } else if (!passwordValue.match(punctuationRegex)) {
-        passwordInput.setCustomValidity('Один знак пунктуації');
-    } else if (passwordValue.length < minLength) {
-        passwordInput.setCustomValidity(`Мінімум ${minLength} символів`);
+    const hasUppercase = passwordValue.match(uppercaseRegex);
+    const hasNumber = passwordValue.match(numberRegex);
+    const hasPunctuation = passwordValue.match(punctuationRegex);
+    const hasMinLength = passwordValue.length >= minLength;
+
+    if (hasUppercase) {
+        uppercaseError.style.display = 'none';
+        passwordInput.classList.remove('error-input');
     } else {
-        passwordInput.setCustomValidity('');
+        uppercaseError.style.display = 'block';
+        passwordInput.classList.add('error-input');
     }
 
-    errorMessage.textContent = passwordInput.validationMessage;
+    if (hasNumber) {
+        numberError.style.display = 'none';
+        passwordInput.classList.remove('error-input');
+    } else {
+        numberError.style.display = 'block';
+        passwordInput.classList.add('error-input');
+    }
+
+    if (hasPunctuation) {
+        punctuationError.style.display = 'none';
+        passwordInput.classList.remove('error-input');
+    } else {
+        punctuationError.style.display = 'block';
+        passwordInput.classList.add('error-input');
+    }
+
+    if (hasMinLength) {
+        lengthError.style.display = 'none';
+        passwordInput.classList.remove('error-input');
+    } else {
+        lengthError.style.display = 'block';
+        passwordInput.classList.add('error-input');
+    }
 }
 
 passwordInput.addEventListener('input', validatePassword);
