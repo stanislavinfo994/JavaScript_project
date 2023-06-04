@@ -1,0 +1,39 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.formGroup {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.input {
+    min-height: 25px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0be69d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    max-height: 47px;
+}
+
+.error {
+    color: red;
+}

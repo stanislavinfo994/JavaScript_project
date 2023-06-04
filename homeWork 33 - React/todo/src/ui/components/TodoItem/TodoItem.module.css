@@ -1,0 +1,103 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formGroup {
+    margin-bottom: 10px;
+}
+
+.input {
+    max-height: 25px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.button {
+    background-color: #0be69d;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.todoItem {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.description {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.deleteIcon {
+    background: #ff3333;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.editIcon {
+    background: #3366cc;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.editSaveIcon {
+    background: #0be69d;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.editCancelIcon {
+    background: #ff3333;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.toggleCompleteIcon {
+    background: #4CAF50;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.icon {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.todoItem .icon {
+    color: #fff; /* Змінити на потрібний колір */
+}
+
