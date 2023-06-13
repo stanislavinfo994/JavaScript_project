@@ -55,5 +55,19 @@ let users = [
     }
 ]
 
+let totalBalance = 0;
 
+users.forEach(user=> {
+    const balance = parseFloat (user.balance.replace(/[^0-9.-]+/g,''));
+    if (balance > 2000) {
+        console.log(user.phone);
+    }
+    totalBalance += balance;
+})
+console.log('Total balance:', totalBalance);
 
+//+1 (840) 583-3207
+//+1 (985) 593-3328
+//+1 (995) 591-2478
+//+1 (942) 565-3988
+//Total balance: 15803.569999999998
