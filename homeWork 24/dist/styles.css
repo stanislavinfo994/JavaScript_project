@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#id-input {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.post-block {
+    margin-top: 20px;
+}
+
+.post-block h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.post-block p {
+    font-size: 16px;
+    color: #666;
+}
+
+.comment-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-block {
+    margin-top: 20px;
+}
+
+.comment-block h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.comment-block p {
+    font-size: 14px;
+    color: #666;
+}
