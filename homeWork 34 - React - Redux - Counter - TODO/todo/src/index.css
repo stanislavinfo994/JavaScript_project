@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #00ffff;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 5px;
+
+}
+
+li{
+  padding: 10px;
+  background-color: #0be69d;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
