@@ -3,7 +3,6 @@ const initialState = {
     endpoint: '',
     error: null,
 };
-
 const reducers = (state = initialState, action) => {
     switch (action.type) {
         case 'FETCH_DATA_SUCCESS':
